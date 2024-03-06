@@ -30,19 +30,37 @@ function setcolor(element){
     }
     if(checkwinner() && k>0)
     {
-
+        
         if(k%2==0)
         {
-        document.getElementById("container").innerHTML = "Congratulations Player-2(O)";
-        document.getElementById("container").style.marginLeft = "-10rem";
+            // var ele = document.getElementById("container");
+            if(mediaQuery.matches)
+            {
+                document.getElementById("container").innerHTML = "Congratulations Player-2(O)";
+                document.getElementById("container").style.marginLeft = "2px";
+                document.getElementById("container").style.fontSize = "20px"
+            }
+            else{
+             document.getElementById("container").innerHTML = "Congratulations Player-2(O)";
+             document.getElementById("container").style.marginLeft = "-8rem";
+            }
         }
         else{
-        document.getElementById("container").innerHTML = "Congratulations Player-1(X)";
-        document.getElementById("container").style.marginLeft = "-10rem";
+            if(mediaQuery.matches)
+            {
+                document.getElementById("container").innerHTML = "Congratulations Player-1(X)";
+                document.getElementById("container").style.marginLeft = "2px";
+                document.getElementById("container").style.fontSize = "20px"
+            }
+            else{
+             document.getElementById("container").innerHTML = "Congratulations Player-1(X)";
+             document.getElementById("container").style.marginLeft = "-8rem";
+            }
         }
     }
     else if(k==9)
     {
-        document.getElementById("container").innerHTML = "It's a draw";
+        
+            document.getElementById("container").innerHTML = "It's a draw";
     }
 }
