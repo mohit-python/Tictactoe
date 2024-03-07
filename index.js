@@ -34,6 +34,7 @@ function setcolor(element){
         if(k%2==0)
         {
             // var ele = document.getElementById("container");
+            // var mediaQuery = window.matchMedia('(max-width: 600px)');
             if(mediaQuery.matches)
             {
                 document.getElementById("container").innerHTML = "Congratulations Player-2(O)";
@@ -46,6 +47,7 @@ function setcolor(element){
             }
         }
         else{
+            // var mediaQuery = window.matchMedia('(max-width: 600px)');
             if(mediaQuery.matches)
             {
                 document.getElementById("container").innerHTML = "Congratulations Player-1(X)";
@@ -60,7 +62,6 @@ function setcolor(element){
     }
     else if(k==9)
     {
-        
-            document.getElementById("container").innerHTML = "It's a draw";
+        document.getElementById("container").innerHTML = "It's a draw";
     }
 }
