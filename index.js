@@ -25,35 +25,19 @@ function setcolor(element){
     element.innerHTML="X";
     else
     element.innerHTML="O";
-    element.style.color="rgb(169, 164, 164)";
+    element.style.color="#B85042";
+    element.style.fontSize = "4rem";
+    element.classList.add("disable");
     k+=1;
     }
     if(checkwinner() && k>0)
     {
-        var mediaQuery = window.matchMedia('(max-width: 600px)');
         if(k%2==0)
         {
-            document.getElementById("container").innerHTML = "Congratulations Player-2(O)";
-            if(mediaQuery.matches)
-            {
-                document.getElementById("container").style.marginLeft = "2px";
-                document.getElementById("container").style.fontSize = "20px"
-            }
-            else{
-             document.getElementById("container").style.marginLeft = "-8rem";
-            }
+            document.getElementsByTagName("h2")[0].innerHTML = "Congratulations Player-2(O)";
         }
         else{
-            // var mediaQuery = window.matchMedia('(max-width: 600px)');
-            document.getElementById("container").innerHTML = "Congratulations Player-1(X)";
-            if(mediaQuery.matches)
-            {
-                document.getElementById("container").style.marginLeft = "2px";
-                document.getElementById("container").style.fontSize = "20px"
-            }
-            else{
-             document.getElementById("container").style.marginLeft = "-8rem";
-            }
+            document.getElementsByTagName("h2")[0].innerHTML = "Congratulations Player-1(X)";
         }
     }
     else if(k==9)
