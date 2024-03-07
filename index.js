@@ -30,7 +30,7 @@ function setcolor(element){
     }
     if(checkwinner() && k>0)
     {
-        var ele = document.getElementById("container");
+        var mediaQuery = window.matchMedia('(max-width: 600px)');
         if(k%2==0)
         {
             // var ele = document.getElementById("container");
