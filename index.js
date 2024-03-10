@@ -42,6 +42,6 @@ function setcolor(element){
     }
     else if(k==9)
     {
-        document.getElementById("container").innerHTML = "It's a draw";
+        document.getElementByTagName("h2")[0].innerHTML = "It's a draw";
     }
 }
