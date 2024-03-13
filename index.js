@@ -25,8 +25,8 @@ function setcolor(element){
     element.innerHTML="X";
     else
     element.innerHTML="O";
-    element.style.color="#B85042";
-    element.style.fontSize = "4rem";
+    element.style.color="white";
+    element.style.fontSize = "2rem";
     element.classList.add("disable");
     k+=1;
     }
